@@ -94,25 +94,7 @@
                                 </table>
                             </div>
 
-                            <!-- Status Update Form -->
-                            <div class="mt-6">
-                                <h3 class="text-lg font-medium text-gray-900 mb-2">Update Status</h3>
-                                {{-- <form action="{{ route('orders.update-status', $order->id) }}" method="POST">
-                                    @csrf
-                                    @method('PUT')
-                                    <div class="flex items-center space-x-4">
-                                        <select name="status" class="border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                                            <option value="pending" {{ $order->status === 'pending' ? 'selected' : '' }}>Pending</option>
-                                            <option value="processing" {{ $order->status === 'processing' ? 'selected' : '' }}>Processing</option>
-                                            <option value="completed" {{ $order->status === 'completed' ? 'selected' : '' }}>Completed</option>
-                                            <option value="cancelled" {{ $order->status === 'cancelled' ? 'selected' : '' }}>Cancelled</option>
-                                        </select>
-                                        <x-primary-button>
-                                            {{ __('Update') }}
-                                        </x-primary-button>
-                                    </div>
-                                </form> --}}
-                            </div>
+
                         </div>
                     </div>
 

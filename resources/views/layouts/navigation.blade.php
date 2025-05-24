@@ -16,6 +16,9 @@
 
                     @auth
                         @if(auth()->user()->role_id === 1) <!-- Admin links -->
+                         <x-nav-link :href="route('admin.dashboard.index')" :active="request()->routeIs('admin.logs.index')">
+                                {{ __('Dashboard') }}
+                            </x-nav-link>
                             <x-nav-link :href="route('admin.products.index')" :active="request()->routeIs('admin.products.*')">
                                 {{ __('Products') }}
                             </x-nav-link>
@@ -25,9 +28,7 @@
                             <x-nav-link :href="route('admin.logs.index')" :active="request()->routeIs('admin.logs.index')">
                                 {{ __('Products Logs') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('admin.dashboard.index')" :active="request()->routeIs('admin.logs.index')">
-                                {{ __('Dashboard') }}
-                            </x-nav-link>
+
                             <x-nav-link :href="route('admin.ai_recommendations.index')" :active="request()->routeIs('admin.ai_recommendations.index')">
                                 {{ __('AI Recommendations') }}
                             </x-nav-link>
