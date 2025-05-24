@@ -51,6 +51,7 @@ cd mini-medical-ecommerce
     This installs the necessary PHP packages listed in the `composer.json`.
    
 2. **Install JavaScript dependencies using npm:**
+   
   ```bash
     npm install
     npm run build
